@@ -1,0 +1,148 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  color: #656c6d;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h1 strong {
+  font-weight: 900;
+}
+
+h2 {
+  line-height: 20px;
+  margin: 0;
+  color: $grey;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+h3, h4 {
+  color: $grey;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+p.intro {
+  font-size: 16px;
+  margin: 12px 0 0;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #333;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: $yellow;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: $yellow;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 0;
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $grey;
+    border-color: $grey;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $grey;
+  padding: 10px 20px;
+  border-color: $grey;
+  border-radius: 0;
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: #fff;
+    background-color: $yellow;
+    border-color: $yellow;
+  }
+  i.fa {
+    margin-right: 10px;
+  }
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+}
+
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: inherit;
+}

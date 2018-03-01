@@ -1,0 +1,14 @@
+#footer {
+  background: $grey;
+  color: #7d8384;
+  padding: 30px 0 25px 0;
+  p {
+    font-size: 13px;
+  }
+  a {
+    color: #a0a5a5;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

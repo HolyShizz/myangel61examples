@@ -1,0 +1,46 @@
+#skills {
+  padding: 100px 0;
+  background: $yellow;
+  h2 {
+    color: #fff;
+  }
+  hr {
+    background: rgba(255,255,255,0.3);
+  }
+  .skill {
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0;
+    h4 {
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 152px;
+  margin-bottom: 26px;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.percent {
+  display: inline-block;
+  font-size: 21px;
+  color: $grey;
+  line-height: 152px;
+  z-index: 2;
+  &:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+  }
+}

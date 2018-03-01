@@ -1,0 +1,118 @@
+#portfolio {
+  padding: 80px 0;
+  background: #ffffff; /* Old browsers */
+  background: linear-gradient(to bottom, #ffffff 0%, #f4f5f6 49%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+
+.categories {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+ul.cat li {
+  display: inline-block;
+}
+
+ol.type li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  button {
+    background: $blue;
+    color: #fff;
+    padding: 6px 14px;
+    border: none;
+    &.active {
+      background: $grey;
+      color: #fff;
+    }
+    &:hover {
+      background: $grey;
+      color: #fff;
+    }
+  }
+}
+
+.isotope-item {
+  margin-right: -1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  transition-property: transform, opacity;
+}
+
+.portfolio-item {
+  margin: 15px 0;
+  transition: all 0.5s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .hover-bg {
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.hover-bg {
+  .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.66);
+    padding: 33% 0 0 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    &>h4 {
+      opacity: 0;
+      color: #fff;
+      font-weight: 400;
+      transform: translateY(100%);
+      transition: all 0.3s;
+    }
+    &>i {
+      opacity: 0;
+      transform: translateY(0);
+      transition: all 0.3s;
+    }
+  }
+  &:hover .hover-text>h4 {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    transform: translateY(0);
+  }
+  &:hover .hover-text>i {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    transform: translateY(100%);
+  }
+  &:hover .hover-text {
+    opacity: 1;
+  }
+}
+
+#portfolio i.fa {
+  font-size: 20px;
+  padding: 5px;
+  color: $yellow;
+}

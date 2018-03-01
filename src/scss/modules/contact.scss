@@ -1,0 +1,96 @@
+#contact {
+  padding: 100px 0 40px 0;
+  color: $grey;
+  background: $yellow;
+  h2 {
+    color: #fff;
+  }
+  hr {
+    background: rgba(255,255,255,0.3);
+  }
+  h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+  form {
+    padding: 30px 0;
+  }
+  i.fa {
+    color: #121d1f;
+    margin-bottom: 10px;
+  }
+  .text-danger {
+    color: #000;
+    text-align: left;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #2c3e50;
+    background-color: rgba(255,255,255,0.8);
+    background-image: none;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: none;
+    &focus {
+      border-color: inherit;
+      outline: 0;
+      -webkit-box-shadow: transparent;
+      box-shadow: transparent;
+    }
+  }
+  .social {
+    margin-top: 60px;
+    ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    i.fa {
+      font-size: 30px;
+      padding: 4px 5px;
+      color: #fff;
+      transition: all 0.5s;
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+  .btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    margin-top: 15px;
+    &:hover,
+    &:focus {
+      background-color: $grey;
+      border: 1px solid $grey;
+    }
+    &:active,
+    &.active {
+      background-image: none;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $yellow-dark;
+}
+.form-control:-moz-placeholder {
+  color: $yellow-dark;
+}
+.form-control::-moz-placeholder {
+  color: $yellow-dark;
+}
+.form-control:-ms-input-placeholder {
+  color: $yellow-dark;
+}
