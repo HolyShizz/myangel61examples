@@ -1,0 +1,20 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+  line-height: $size;
+  line-height: calculateRem($size);
+}
+
+$blue: #017dfb;
+
+$gray-bg: #f9f9f9;
+
+$gray-text: #a5aec2;
